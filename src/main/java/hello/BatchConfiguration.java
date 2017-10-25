@@ -47,7 +47,7 @@ public class BatchConfiguration {
         
         reader.setLineMapper(new DefaultLineMapper<Person>() {{
             setLineTokenizer(new FixedLengthTokenizer() {{
-                setColumns(new Range[] {new Range(1, 6), new Range(7, 9)});
+                setColumns(new Range[] {new Range(1, 6), new Range(7, 11)});
                 setNames(new String[] { "first_name", "last_name"});
             }});
         
